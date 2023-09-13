@@ -32,6 +32,16 @@ module.exports = withLess(
 
       return config;
     },
+    async rewrites() {
+      return {
+        fallback: [
+          {
+            source: '/api/:path*',
+            destination: 'http://localhost:3000/:path*'
+          },
+        ]
+      }
+    },
     async redirects() {
       return [
         {

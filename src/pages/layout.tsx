@@ -12,6 +12,7 @@ import {
   IconUser,
   IconMenuFold,
   IconMenuUnfold,
+  IconFire
 } from '@arco-design/web-react/icon';
 import { useSelector } from 'react-redux';
 import { useRouter } from 'next/router';
@@ -34,6 +35,8 @@ const Content = Layout.Content;
 
 function getIconFromKey(key) {
   switch (key) {
+    case 'yulong':
+      return <IconFire className={styles.icon} />
     case 'dashboard':
       return <IconDashboard className={styles.icon} />;
     case 'list':

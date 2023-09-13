@@ -30,6 +30,20 @@ export const routes: IRoute[] = [
     ],
   },
   {
+    name: 'menu.yulong',
+    key: 'yulong',
+    children: [
+      {
+        name: 'menu.yulong.family',
+        key: 'yulong/family',
+      },
+      {
+        name: 'menu.yulong.remeCode',
+        key: 'yulong/remeCode',
+      },
+    ],
+  },
+  {
     name: 'menu.visualization',
     key: 'visualization',
     children: [
